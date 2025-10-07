@@ -65,7 +65,7 @@ class fifo_scoreboard extends uvm_scoreboard;
           end
         end
         else begin
-          `uvm_error("SCB", "Received from DUT, while Expect Queue is empty");
+          `uvm_error("SCB", "RECIIVED FROM DUT, BUT EXPECTED QUEUE IS EMPTY");
           `uvm_info("SCB", $sformatf("EXP DATA: %0d | ACTUAL DATA: %0d", tmp_trans, get_actual.rdata), UVM_LOW)
         end
       end
